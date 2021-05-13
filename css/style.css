@@ -32,6 +32,7 @@ body {
     max-width: 700px;
     margin: 60px auto 30px;
     padding: 60px;
+    padding-top: 30px;
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
     position: relative;
@@ -144,15 +145,15 @@ h2.learn:before {
     background-position: right top;
 }
 
-h2#eye:before {
+h2.eye:before {
     background-position: -90px top;
 }
 
-h2#clock:before {
+h2.clock:before {
     background-position: -45px top;
 }
 
-h2#chat:before {
+h2.chat:before {
     background-position: -45px bottom;
 }
 
@@ -175,6 +176,16 @@ h2#contact:before {
 
 #bio h2 {
     font-size: 15px;
+}
+
+#bio img {
+    float: left;
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 #bio p {
@@ -313,6 +324,14 @@ ul#seenOn li img {
     vertical-align: top;
 }
 
+.skills-block.large {
+    width: 72%;
+}
+
+.skills-block.small {
+    width: 26%;
+}
+
 .skills-block h4 {
     font-weight: bold;
     width: 100%;
@@ -399,22 +418,22 @@ ul#seenOn li img {
     display: none;
 }
 
-ul#jobs, ul.schools, ul#recommends, ul#seenOn {
+ul.jobs, ul.schools, ul#recommends, ul#seenOn {
     margin: 0;
     list-style: none;
 }
 
-ul#jobs li, ul.schools li, ul#recommends li {
+ul.jobs li, ul.schools li, ul#recommends li {
     margin: 0 0 20px 0;
     clear: both;
 }
 
-ul#jobs li .details, ul.schools li .details, ul#recommends li .details {
+ul.jobs li .details, ul.schools li .details, ul#recommends li .details {
     float: left;
     width: 40%
 }
 
-ul#jobs li p, ul.schools li > p, ul#recommends li > p {
+ul.jobs li p, ul.schools li > p, ul#recommends li > p {
     float: right;
     width: 57%;
     margin-bottom: 25px;
@@ -495,12 +514,12 @@ body.respond ul#seenOn li img {
     padding: 2%;
 }
 
-body.respond ul#jobs li .details, body.respond ul.schools li .details, body.respond ul#recommends li .details {
+body.respond ul.jobs li .details, body.respond ul.schools li .details, body.respond ul#recommends li .details {
     float: none;
     width: 100%
 }
 
-body.respond ul#jobs li p, body.respond ul.schools li > p, body.respond ul#recommends li > p {
+body.respond ul.jobs li p, body.respond ul.schools li > p, body.respond ul#recommends li > p {
     float: none;
     width: 100%;
     margin-bottom: 50px;
@@ -548,4 +567,29 @@ body.respond #messageSent {
     right: 10px;
 
     font-size: small;
+}
+
+
+/* phones */
+@media screen and (max-width: 760px) {
+    #wrapper {
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    #sticker h2.sectionHead {
+        margin: 0 0 0 40px;
+    }
+    #sticker .socialIcons {
+
+    }
+
+    h2.sectionHead {
+        margin: 20px -60px;
+        line-height: 1.4rem;
+    }
+
+    #bio p {
+        padding: 20px;
+    }
 }
